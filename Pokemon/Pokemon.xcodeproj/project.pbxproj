@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4FCFE0C52CD0D84F00B03B73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FCFE0C42CD0D84F00B03B73 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4F02ADED2CBE6E2100F823D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		4F02ADDC2CBE6E1F00F823D1 /* Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F02ADEC2CBE6E2100F823D1 /* PokemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F02ADF62CBE6E2100F823D1 /* PokemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCFE0C42CD0D84F00B03B73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		4F02ADD32CBE6E1F00F823D1 = {
 			isa = PBXGroup;
 			children = (
+				4FCFE0C42CD0D84F00B03B73 /* README.md */,
 				4F02ADDE2CBE6E1F00F823D1 /* Pokemon */,
 				4F02ADEF2CBE6E2100F823D1 /* PokemonTests */,
 				4F02ADF92CBE6E2100F823D1 /* PokemonUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCFE0C52CD0D84F00B03B73 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

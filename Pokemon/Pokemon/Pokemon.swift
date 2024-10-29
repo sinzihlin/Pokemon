@@ -15,7 +15,12 @@ struct Pokemon: Codable, Identifiable {
     let sprites: Sprites
     
     static func mock() -> Pokemon {
-        return Pokemon(id: 1, name: "Pikachu", height: 4, weight: 60, types: [.init(slot: 1, type: .init(name: "electric", url: ""))], sprites: .init(other: .init(home: .init(frontDefault: "https://example.com/pikachu.png"))))
+        let types : [PokemonType] = [
+            .init(slot: UUID().hashValue, type: .init(name: "electric", url: "")),
+            .init(slot: UUID().hashValue, type: .init(name: "fire", url: "")),
+            .init(slot: UUID().hashValue, type: .init(name: "water", url: ""))]
+        
+        return Pokemon(id: 1, name: "Pikachu", height: 4, weight: 60, types: types, sprites: .init(other: .init(home: .init(frontDefault: "https://example.com/pikachu.png"))))
        
     }
 }
