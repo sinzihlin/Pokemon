@@ -13,7 +13,7 @@ struct Pokemon: Codable, Identifiable {
     let weight: Int
     let types: [PokemonType]
     let sprites: Sprites
-    
+    ///假資料測試
     static func mock() -> Pokemon {
         let types : [PokemonType] = [
             .init(slot: UUID().hashValue, type: .init(name: "electric", url: "")),

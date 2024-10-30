@@ -11,9 +11,9 @@ import Combine
 class PokemonViewModel: ObservableObject {
     @Published var pokemon: Pokemon?
     private var cancellables = Set<AnyCancellable>()
-    
+    private let urlString = "https://pokeapi.co/api/v2/pokemon/"
     func fetchPokemon(id: String) {
-        let url = URL(string: "https://pokeapi.co/api/v2/pokemon/\(id)")!
+        let url = URL(string: "\(urlString)\(id)")!
         URLSession.shared.dataTaskPublisher(for: url)
             .map(\.data)
             .decode(type: Pokemon.self, decoder: JSONDecoder())
