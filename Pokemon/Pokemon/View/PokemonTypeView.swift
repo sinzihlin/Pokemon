@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PokemonTypeView: View {
+    let title: String = "Type"
     let pokemon: Pokemon
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Type")
+            Text(title)
                 .foregroundColor(.black)
                 .fontWeight(.medium)
                 .padding(.top, 12)
